@@ -1,0 +1,565 @@
+/* Estilos para el contenedor del contenido de las secciones */
+.content-container {
+  width: 800px; /* Establece el ancho deseado */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 20px; /* Agrega espacio alrededor del contenido (ajusta según tus necesidades) */
+}
+
+/* Estilos para el contenedor de la galería */
+.gallery-container {
+  margin-top: 20px; /* Agrega espacio entre el contenido y la galería (ajusta según tus necesidades) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+  max-height: 100%; /* Ajusta la altura máxima según sea necesario */
+}
+
+.gallery img {
+  max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+  max-height: 100%; /* Ajusta la altura máxima según sea necesario */
+  object-fit: cover;
+}
+
+
+/* ___________________________________________________________________________________________ */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    margin-bottom: 20px;
+  }
+
+/* Estilos para el encabezado */
+header {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.banner-container {
+    position: relative;
+    background-image: url('../images/banner/banner12.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 504px;
+    overflow: hidden;
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+/* Estilos para los enlaces */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido principal (main) */
+main {
+  margin-top: 10px; /* Ajusta la cantidad de espacio que necesitas para el header */
+  margin-bottom: 10px; /* Ajusta la cantidad de espacio que necesitas para el footer */
+}
+
+
+/* ___________________________________________________________________________________________ */
+
+/* Estilos para el footer */
+.footer {
+    text-align: center;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .footer p {
+    margin: 10px 0; /* Espacio entre párrafos */
+    font-size: 14px; /* Tamaño de fuente */
+  }
+  
+  /* Estilos para los enlaces en el footer */
+  .footer a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  
+/* ___________________________________________________________________________________________ */
+
+.gallery {
+    --size: min(800px, 800px);
+    position: relative;
+    box-shadow: 
+      0 0 10px #0002,
+      0 20px 40px -20px #0004;
+    width: var(--size);
+    height: var(--size);
+    background: #fff;
+    border: 6px solid #fff;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    gap: 6px;
+    border-radius:15px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+    
+  .gallery img:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+  }
+  
+  .gallery img:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+  }
+  
+  .gallery img:nth-child(3) {
+    grid-row: 1 / 3;
+    grid-column: 2;
+    align-self: end;
+  }
+  
+  /* ___________________________________________________________________________________________ */
+
+.about,
+.dishes,
+.ingredients {
+  margin-bottom: 10px; /* Espacio entre secciones */
+}
+
+/* Estilos para el contenido de las secciones */
+.about h2,
+.dishes h2,
+.ingredients h2 {
+  font-size: 24px; /* Tamaño del encabezado */
+  margin-bottom: 10px; /* Espacio debajo del encabezado */
+}
+
+.about p,
+.dishes p,
+.ingredients p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos para los enlaces en las secciones */
+.about a,
+.dishes a,
+.ingredients a {
+  color: #0078d4; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.about a:hover,
+.dishes a:hover,
+.ingredients a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+  /* ___________________________________________________________________________________________ */
+
+/* Estilo para las secciones de contenido */
+.section {
+  margin: 20px auto; /* Margen en la parte superior e inferior y centrado horizontalmente */
+  max-width: 800px; /* Ancho máximo para el contenido */
+  padding: 20px; /* Espaciado interior para el contenido */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente con bordes redondeados */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Estilo para los títulos de las secciones */
+section h2 {
+  color: #333; /* Color del texto */
+}
+
+/* Estilo para el contenido de las secciones */
+section p {
+  color: #666; /* Color del texto secundario */
+}
+
+/* ___________________________________________________________________________________________ */
+
+
+.gallery-ingredients {
+  --size: min(800px, 800px);
+  position: relative;
+  box-shadow: 
+    0 0 10px #0002,
+    0 20px 40px -20px #0004;
+  /* width: var(--size); */
+  background: #fff;
+  border: 6px solid #fff;
+  display: grid;
+  grid-template-rows: auto auto; /* Cambia las filas a altura automática */
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  gap: 6px;
+  border-radius: 15px;
+}
+
+.gallery-ingredients img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+  
+.gallery-ingredients img:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1/3;
+  justify-self: end;
+}
+
+.gallery-ingredients img:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1/3;
+  justify-self: end;
+}
+
+/* ___________________________________________________________________________________________ */
+
+
+.gallery-galeria {
+  --size: min(800px, 800px);
+  position: relative;
+  box-shadow: 
+    0 0 10px #0002,
+    0 20px 40px -20px #0004;
+  /* width: var(--size); */
+  background: #fff;
+  border: 6px solid #fff;
+  display: grid;
+  grid-template-rows: auto auto; /* Cambia las filas a altura automática */
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  gap: 6px;
+  border-radius: 15px;
+}
+
+.gallery-galeria img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 15px;
+}
+
+.gallery-galeria img:nth-child(1),
+.gallery-galeria img:nth-child(2) {
+  max-height: calc((var(--size) - 6px) / 2);
+}
+
+.gallery-galeria img:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.gallery-galeria img:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.gallery-galeria img:nth-child(3) {
+  grid-column: span 2;
+  grid-row: 2 / span 2; /* Ocupa desde la fila 2 hasta la fila 3 */
+  justify-self: end;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agregar sombra de texto */
+}
+
+/* ___________________________________________________________________________________________ */
+
+
+.gallery-ingredients2 {
+  --size: min(800px, 800px);
+  position: relative;
+  box-shadow: 
+    0 0 10px #0002,
+    0 20px 40px -20px #0004;
+  /* width: var(--size); */
+  background: #fff;
+  border: 6px solid #fff;
+  display: grid;
+  grid-template-rows: minmax(auto, 1fr) auto; /* Establece la primera fila con altura automática */
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  gap: 6px;
+  border-radius: 15px;
+}
+
+.gallery-ingredients2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 15px;
+}
+  
+.gallery-ingredients2 img:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  justify-self: end;
+}
+
+.gallery-ingredients2 img:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.gallery-ingredients2 img:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+
+
+/* ___________________________________________________________________________________________ */
+
+/* Define la animación llamada 'shake' */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Aplica la animación 'spin' a los elementos con la clase 'spin-icon' */
+.spin-icon {
+  animation: spin 0.5s infinite;
+}
+
+/* ___________________________________________________________________________________________ */
+
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.animate {
+  position: absolute;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.espátula {
+  width: 50px; /* Ajusta el ancho de la imagen de la espátula */
+  height: 50px; /* Ajusta la altura de la imagen de la espátula */
+  background-image: url('../images/animations/espatula.png'); /* Reemplaza 'ruta/a/tu/imagen-de-espatula.png' con la ruta real de tu imagen de espátula */
+  background-size: cover; /* Ajusta la forma en que la imagen se adapta al tamaño del elemento */
+  animation-name: chaseEspátula;
+}
+
+.tomate {
+  width: 50px; /* Ajusta el ancho de la imagen del tomate */
+  height: 50px; /* Ajusta la altura de la imagen del tomate */
+  background-image: url('../images/animations/tomate.png'); /* Reemplaza 'ruta/a/tu/imagen-de-tomate.png' con la ruta real de tu imagen de tomate */
+  background-size: cover; /* Ajusta la forma en que la imagen se adapta al tamaño del elemento */
+  animation-name: chaseTomate;
+}
+
+
+@keyframes chaseEspátula {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(25%, 0);
+  }
+  50% {
+    transform: translate(50%, 0);
+  }
+  75% {
+    transform: translate(75%, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+@keyframes chaseTomate {
+  0% {
+    transform: translate(100%, 0);
+  }
+  25% {
+    transform: translate(75%, 0);
+  }
+  50% {
+    transform: translate(50%, 0);
+  }
+  75% {
+    transform: translate(25%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+/* Retraso inicial para que la animación comience en momentos diferentes */
+.espátula {
+  animation-delay: 0s;
+}
+
+.tomate {
+  animation-delay: 2s;
+}
+
+
+/* ___________________________________________________________________________________________ */
+
+
+.container-contact {
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  margin-bottom: 20px;
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Alinear en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+.social-icons {
+  display: flex; /* Usar flexbox para poner los iconos en una fila */
+  gap: 10px; /* Espacio entre los iconos (ajusta según sea necesario) */
+  transition: transform 0.2s ease-in-out; /* Agregar una transición suave */
+}
+
+/* Estilos opcionales para centrar los iconos verticalmente */
+.social-icons a:hover {
+  animation: pulse 0.5s ease infinite;
+}
+
+/* Definición de la animación 'pulse' */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ___________________________________________________________________________________________ */
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  border-radius: 15px;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+.item-1 { 
+  background-image: url('../images/banner/banner3.jpg');
+}
+
+.item-2 { 
+  background-image: url('../images/banner/banner4.jpg');
+}
+
+.item-3 { 
+  background-image: url('../images/banner/banner2.jpg');
+}
+
+.item-4 { 
+  background-image: url('../images/banner/banner8.jpg');
+}
+
+.item-5 { 
+  background-image: url('../images/banner/banner9.jpg');
+}

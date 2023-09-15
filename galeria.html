@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocina Argentina</title>
-
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <!-- Descripción del sitio -->
     <meta
       name="description"
@@ -44,164 +44,120 @@
     <meta property="og:url" content="URL_de_tu_Sitio" />
     <meta property="og:type" content="website" />
   </head>
+
   <body>
-    <table
-      width="800"
-      align="center"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-    >
-      <tr>
-        <td align="center">
-          <header>
-            <img
-              src="./images/banner/banner12.jpg"
-              alt="varios 1"
-              width="800"
-              height="304"
-              loading="lazy"
-            /><br />
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 1"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-                <td align="center">
-                  <!-- Contenido del encabezado -->
-                  <h1>Bienvenidos a la Cocina Argentina</h1>
-                </td>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 2"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-              </tr>
-            </table>
-          </header>
+    <header>
+      <div class="banner-container container">
+        <h1 class="banner-title">Bienvenidos a la Cocina Argentina</h1>
 
-          <nav>
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td align="center">
-                  <a href="index.html">
-                    <img
-                      src="./icons/home.png"
-                      alt="Ícono de inicio"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Inicio
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="ingredientes.html">
-                    <img
-                      src="./icons/ingredients.png"
-                      alt="Ícono de ingredientes"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Ingredientes
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="contact.html">
-                    <img
-                      src="./icons/contact.png"
-                      alt="Ícono de contacto"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Contacto
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </nav>
+        <div class="animation-container">
+          <div class="animate espátula"></div>
+          <div class="animate tomate"></div>
+        </div>
 
-          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <nav>
+          <div class="navbar">
+            <a href="index.html">
+              <img
+                src="./icons/home.png"
+                alt="Ícono de inicio"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Inicio
+            </a>
+            <a href="ingredientes.html">
+              <img
+                src="./icons/ingredients.png"
+                alt="Ícono de ingredientes"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Ingredientes
+            </a>
+            <a href="contact.html">
+              <img
+                src="./icons/contact.png"
+                alt="Ícono de contacto"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Contacto
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="section">
+          <section>
             <h1>
               Los dos platos más importantes de la cocina argentina son las
               "Empanadas" y el "Asado".
             </h1>
             <p>Haz clic en las imágenes para conocer más sobre estos platos:</p>
-            <tr>
-              <td align="center">
-                <h2><u>Empanadas</u></h2>
-                <a href="empanadas.html"
-                  ><img
-                    src="./images/empanadas/empanada1.jpg"
-                    alt="Empanadas"
-                    width="389"
-                    height="584"
-                    loading="lazy"
-                /></a>
-                <a href="empanadas.html"
-                  ><img
-                    src="./images/empanadas/empanada2.jpg"
-                    alt="Empanadas"
-                    width="389"
-                    height="584"
-                    loading="lazy"
-                /></a>
-              </td>
-            </tr>
-            <tr>
-              <td align="center">
-                <h2><u>Asado</u></h2>
-                <a href="asado.html"
-                  ><img
-                    src="./images/asado/asado1.jpg"
-                    alt="Asado"
-                    width="389"
-                    height="259"
-                    loading="lazy"
-                /></a>
-                <a href="asado.html"
-                  ><img
-                    src="./images/asado/asado2.jpg"
-                    alt="Asado"
-                    width="389"
-                    height="259"
-                    loading="lazy"
-                /></a>
-                <a href="asado.html"
-                  ><img
-                    src="./images/asado/asado3.jpg"
-                    alt="Asado"
-                    width="782"
-                    height="437"
-                    loading="lazy"
-                /></a>
-              </td>
-            </tr>
-          </table>
-          <footer>
-            <!-- Contenido del pie de página -->
-            <p>
-              &copy; 2023 Comida Típica Argentina. Todos los derechos
-              reservados.
-            </p>
-            <p>
-              Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co
-            </p>
-          </footer>
-        </td>
-      </tr>
-    </table>
+          </section>
+        </div>
+
+        <div class="section">
+          <section>
+            <h2><u>Empanadas</u></h2>
+            <a href="empanadas.html">
+              <div class="gallery-ingredients">
+                <img
+                  src="./images/empanadas/empanada1.jpg"
+                  alt="Empanadas"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/empanadas/empanada2.jpg"
+                  alt="Empanadas"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+          </section>
+        </div>
+
+        <div class="section">
+          <section>
+            <h2><u>Asado</u></h2>
+            <a href="asado.html">
+              <div class="gallery-galeria">
+                <img
+                  src="./images/asado/asado1.jpg"
+                  alt="Asado"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/asado/asado2.jpg"
+                  alt="Asado"
+                  loading="lazy"
+                />
+                <img
+                  src="./images/asado/asado3.jpg"
+                  alt="Asado"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Contenido del pie de página -->
+      <p>&copy; 2023 Comida Típica Argentina. Todos los derechos reservados.</p>
+      <p>Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co</p>
+    </footer>
   </body>
 </html>

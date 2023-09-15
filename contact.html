@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocina Argentina</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
     <!-- Descripción del sitio -->
     <meta
@@ -45,103 +46,66 @@
     <meta property="og:type" content="website" />
   </head>
   <body>
-    <table
-      width="800"
-      align="center"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-    >
-      <tr>
-        <td align="center">
-          <header>
-            <img
-              src="./images/banner/banner12.jpg"
-              alt="varios 1"
-              width="800"
-              height="304"
-              loading="lazy"
-            /><br />
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 1"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-                <td align="center">
-                  <!-- Contenido del encabezado -->
-                  <h1>Bienvenidos a la Cocina Argentina</h1>
-                </td>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 2"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-              </tr>
-            </table>
-          </header>
+    <header>
+      <div class="banner-container container">
+        <h1 class="banner-title">Bienvenidos a la Cocina Argentina</h1>
 
-          <nav>
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td align="center">
-                  <a href="index.html">
-                    <img
-                      src="./icons/home.png"
-                      alt="Ícono de inicio"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Inicio
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="ingredientes.html">
-                    <img
-                      src="./icons/ingredients.png"
-                      alt="Ícono de ingredientes"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Ingredientes
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="galeria.html">
-                    <img
-                      src="./icons/galery.png"
-                      alt="Ícono de galeria"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Galería
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </nav>
+        <div class="animation-container">
+          <div class="animate espátula"></div>
+          <div class="animate tomate"></div>
+        </div>
 
-          <!-- Contenido de la página -->
-          <h1>Contacto</h1>
-          <p>Nombre: Daniel Felipe Muñoz Restrepo</p>
-          <p>Documento: 1040045371</p>
-          <p>Universidad: Universidad de Antioquia</p>
-          <p>Email: danielf.munoz@udea.edu.co</p>
+        <nav>
+          <div class="navbar">
+            <a href="index.html">
+              <img
+                src="./icons/home.png"
+                alt="Ícono de inicio"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Inicio
+            </a>
+            <a href="ingredientes.html">
+              <img
+                src="./icons/ingredients.png"
+                alt="Ícono de ingredientes"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Ingredientes
+            </a>
+            <a href="galeria.html">
+              <img
+                src="./icons/galery.png"
+                alt="Ícono de contacto"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Galería
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-          <h2>Redes Sociales</h2>
-          <p>Sígueme en mis redes sociales:</p>
+    <main>
+      <div class="container-contact">
+        <h1>Contacto</h1>
+        <p>Nombre: Daniel Felipe Muñoz Restrepo</p>
+        <p>Documento: 1040045371</p>
+        <p>Universidad: Universidad de Antioquia</p>
+        <p>Email: danielf.munoz@udea.edu.co</p>
+
+        <h2>Redes Sociales</h2>
+        <p>Sígueme en mis redes sociales:</p>
+        <div class="social-icons">
           <a
             href="https://www.facebook.com/daniel.munoz2509"
             target="_blank"
@@ -189,58 +153,24 @@
               height="60"
             />
           </a>
+        </div>
+      </div>
 
-          <table width="800" cellspacing="1">
-            <tr>
-              <td>
-                <img
-                  src="./images/banner/banner3.jpg"
-                  alt="varios 1"
-                  width="240"
-                  height="395"
-                  loading="lazy"
-                /><br />
-              </td>
-              <td>
-                <img
-                  src="./images/banner/banner4.jpg"
-                  alt="varios 1"
-                  width="301"
-                  height="195"
-                  loading="lazy"
-                /><br />
-                <img
-                  src="./images/banner/banner2.jpg"
-                  alt="varios 1"
-                  width="301"
-                  height="195"
-                  loading="lazy"
-                /><br />
-              </td>
-              <td>
-                <img
-                  src="./images/banner/banner8.jpg"
-                  alt="varios 1"
-                  width="240"
-                  height="395"
-                  loading="lazy"
-                /><br />
-              </td>
-            </tr>
-          </table>
+      <div class="container">
+        <div class="gallery-wrap">
+          <div class="item item-1"></div>
+          <div class="item item-2"></div>
+          <div class="item item-3"></div>
+          <div class="item item-4"></div>
+          <div class="item item-5"></div>
+        </div>
+      </div>
+    </main>
 
-          <footer>
-            <!-- Contenido del pie de página -->
-            <p>
-              &copy; 2023 Comida Típica Argentina. Todos los derechos
-              reservados.
-            </p>
-            <p>
-              Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co
-            </p>
-          </footer>
-        </td>
-      </tr>
-    </table>
+    <footer class="footer">
+      <!-- Contenido del pie de página -->
+      <p>&copy; 2023 Comida Típica Argentina. Todos los derechos reservados.</p>
+      <p>Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co</p>
+    </footer>
   </body>
 </html>

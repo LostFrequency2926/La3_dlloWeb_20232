@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocina Argentina</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
     <!-- Descripción del sitio -->
     <meta
@@ -44,110 +45,76 @@
     <meta property="og:url" content="URL_de_tu_Sitio" />
     <meta property="og:type" content="website" />
   </head>
-  <body>
-    <table
-      width="800"
-      align="center"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-    >
-      <tr>
-        <td align="center">
-          <header>
-            <img
-              src="./images/banner/banner12.jpg"
-              alt="varios 1"
-              width="800"
-              height="304"
-              loading="lazy"
-            /><br />
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 1"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-                <td align="center">
-                  <!-- Contenido del encabezado -->
-                  <h1>Bienvenidos a la Cocina Argentina</h1>
-                </td>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 2"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-              </tr>
-            </table>
-          </header>
 
-          <nav>
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td align="center">
-                  <a href="index.html">
-                    <img
-                      src="./icons/home.png"
-                      alt="Ícono de inicio"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Inicio
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="ingredientes.html">
-                    <img
-                      src="./icons/ingredients.png"
-                      alt="Ícono de ingredientes"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Ingredientes
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="galeria.html">
-                    <img
-                      src="./icons/galery.png"
-                      alt="Ícono de galeria"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Galería
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="contact.html">
-                    <img
-                      src="./icons/contact.png"
-                      alt="Ícono de contacto"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Contacto
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </nav>
+  <body>
+
+
+    <header>
+      <div class="banner-container container">
+        <h1 class="banner-title">Bienvenidos a la Cocina</h1>
+        <h1 class="banner-title-special">Argentina</h1>
+
+        <div class="animation-container">
+          <div class="animate espátula"></div>
+          <div class="animate tomate"></div>
+        </div>
+
+        <nav>
+          <div class="navbar">
+            <a href="index.html">
+              <img
+                src="./icons/home.png"
+                alt="Ícono de Inicio"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Inicio
+            </a>
+            <a href="ingredientes.html">
+              <img
+                src="./icons/ingredients.png"
+                alt="Ícono de ingredientes"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Ingredientes
+            </a>
+            <a href="galeria.html">
+              <img
+                src="./icons/galery.png"
+                alt="Ícono de galeria"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Galería
+            </a>
+            <a href="contact.html" >
+              <img
+                src="./icons/contact.png"
+                alt="Ícono de contacto"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Contacto
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
 
           <main>
-            <!-- Texto sobre las empanadas -->
-            <section>
+
+            <div class="container">
+
               <h1>Comida Típica Argentina</h1>
               <article>
                 <h2>Empanadas</h2>
@@ -185,8 +152,9 @@
                   </p>
                 </section>
 
-                <section>
+                <div class="container-video-extern">
                   <iframe
+                  class="container-video"
                     width="560"
                     height="315"
                     src="https://www.youtube.com/embed/lqRFXOyiNr0?si=ScPbBbyKB1GBpdC6"
@@ -194,9 +162,10 @@
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
+                    
                   >
                   </iframe>
-                </section>
+                </div>
 
                 <section>
                   <p><strong>Preparación:</strong></p>
@@ -222,42 +191,34 @@
                     </li>
                   </ol>
                 </section>
-                <img
+
+                <div class="gallery-empanadas">
+                  <img
                   src="./images/empanadas/preparacionEmpanada1.jpg"
                   alt="Empanadas"
-                  width="260"
-                  height="380"
                   loading="lazy"
                 />
                 <img
                   src="./images/empanadas/empanada2.jpg"
                   alt="Empanadas"
-                  width="260"
-                  height="380"
                   loading="lazy"
                 />
                 <img
                   src="./images/empanadas/preparacionEmpanada2.jpg"
                   alt="Empanadas"
-                  width="260"
-                  height="380"
                   loading="lazy"
                 />
+
+                </div>
+
               </article>
-            </section>
+            </div>
           </main>
-          <footer>
+
+          <footer class="footer">
             <!-- Contenido del pie de página -->
-            <p>
-              &copy; 2023 Comida Típica Argentina. Todos los derechos
-              reservados.
-            </p>
-            <p>
-              Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co
-            </p>
+            <p>&copy; 2023 Comida Típica Argentina. Todos los derechos reservados.</p>
+            <p>Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co</p>
           </footer>
-        </td>
-      </tr>
-    </table>
   </body>
 </html>

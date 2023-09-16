@@ -1,3 +1,10 @@
+/* Estilos para el ícono de Argentina */
+.argentina-icon {
+  bottom: 10px;
+  z-index: 1; /* Asegura que el ícono esté por encima del contenido */
+}
+
+
 /* Estilos para el contenedor del contenido de las secciones */
 .content-container {
   width: 800px; /* Establece el ancho deseado */
@@ -94,16 +101,18 @@ header {
     transform: translate(-50%, -50%);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 .banner-title-special {
   color: #fff;
   font-size: 36px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 /* Estilos para el menú de navegación */
 nav {

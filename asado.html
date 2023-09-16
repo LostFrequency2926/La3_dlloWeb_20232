@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocina Argentina</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
     <!-- Descripción del sitio -->
     <meta
@@ -45,214 +46,154 @@
     <meta property="og:type" content="website" />
   </head>
   <body>
-    <table
-      width="800"
-      align="center"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-    >
-      <tr>
-        <td align="center">
-          <header>
-            <img
-              src="./images/banner/banner12.jpg"
-              alt="varios 1"
-              width="800"
-              height="304"
-              loading="lazy"
-            /><br />
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 1"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-                <td align="center">
-                  <!-- Contenido del encabezado -->
-                  <h1>Bienvenidos a la Cocina Argentina</h1>
-                </td>
-                <td>
-                  <img
-                    src="./images/banner/banner11.jpg"
-                    alt="banner 2"
-                    width="206"
-                    height="275"
-                    loading="lazy"
-                  /><br />
-                </td>
-              </tr>
-            </table>
-          </header>
+    <header>
+      <div class="banner-container container">
+        <h1 class="banner-title">Bienvenidos a la Cocina</h1>
+        <h1 class="banner-title-special">Argentina</h1>
 
-          <nav>
-            <table width="100%" cellpadding="0" cellspacing="10">
-              <tr>
-                <td align="center">
-                  <a href="index.html">
-                    <img
-                      src="./icons/home.png"
-                      alt="Ícono de inicio"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Inicio
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="ingredientes.html">
-                    <img
-                      src="./icons/ingredients.png"
-                      alt="Ícono de ingredientes"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Ingredientes
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="galeria.html">
-                    <img
-                      src="./icons/galery.png"
-                      alt="Ícono de galeria"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Galería
-                  </a>
-                </td>
-                <td align="center">
-                  <a href="contact.html">
-                    <img
-                      src="./icons/contact.png"
-                      alt="Ícono de contacto"
-                      width="35"
-                      height="35"
-                      loading="lazy"
-                    /><br />
-                    Contacto
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </nav>
-          <main>
-            <!-- Texto sobre el asado -->
+        <div class="animation-container">
+          <div class="animate espátula"></div>
+          <div class="animate tomate"></div>
+        </div>
+
+        <nav>
+          <div class="navbar social-icons">
+            <a href="index.html">
+              <img
+                src="./icons/home.png"
+                alt="Ícono de Inicio"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Inicio
+            </a>
+            <a href="ingredientes.html">
+              <img
+                src="./icons/ingredients.png"
+                alt="Ícono de ingredientes"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Ingredientes
+            </a>
+            <a href="galeria.html">
+              <img
+                src="./icons/galery.png"
+                alt="Ícono de galeria"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Galería
+            </a>
+            <a href="contact.html">
+              <img
+                src="./icons/contact.png"
+                alt="Ícono de contacto"
+                width="35"
+                height="35"
+                loading="lazy"
+                class="spin-icon"
+              />
+              Contacto
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Texto sobre el asado -->
+        <section>
+          <h1>Comida Típica Argentina</h1>
+          <article>
+            <h2>Asado</h2>
             <section>
-              <h1>Comida Típica Argentina</h1>
-              <article>
-                <h2>Asado</h2>
-                <section>
-                  <p>
-                    <strong>Historia:</strong> El asado argentino es un pilar
-                    cultural que se remonta a la época de los gauchos (vaqueros)
-                    en las pampas argentinas. Los gauchos solían cocinar carne
-                    en grandes parrillas al aire libre. Con el tiempo, el asado
-                    se convirtió en una tradición arraigada en la cultura
-                    argentina, donde las reuniones alrededor del fuego y la
-                    carne asada son momentos de camaradería y celebración.
-                  </p>
-                </section>
-                <section>
-                  <p>
-                    <strong>Importancia:</strong> El asado es más que una
-                    comida; es un ritual social y culinario que refleja la
-                    pasión argentina por la carne. La elección y preparación de
-                    los cortes, así como las técnicas de cocción en la parrilla,
-                    son temas de conversación y debate en todo el país.
-                  </p>
-                </section>
-                <section>
-                  <p>
-                    <strong>Ingredientes:</strong> Los ingredientes principales
-                    son los cortes de carne de res de alta calidad. Los cortes
-                    populares incluyen el bife de chorizo, el asado de tira, la
-                    entraña y la morcilla. A menudo se sazonan con sal gruesa
-                    antes de cocinar.
-                  </p>
-                </section>
-
-                <section>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/o5Gm1ZmSfvE?si=rK-k45yk9pXgffMK"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  >
-                  </iframe>
-                </section>
-
-                <section>
-                  <p><strong>Preparación:</strong></p>
-                  <ol>
-                    <li>
-                      Elección de la carne: Se seleccionan cortes de carne de
-                      res fresca y de alta calidad.
-                    </li>
-                    <li>
-                      Sazonado: Se sazona la carne con sal gruesa y, a veces,
-                      con condimentos adicionales como chimichurri.
-                    </li>
-                    <li>
-                      Cocción en la parrilla: La carne se coloca en la parrilla
-                      caliente y se cocina lentamente a la perfección,
-                      volteándola ocasionalmente.
-                    </li>
-                    <li>
-                      Servicio: Una vez cocida, la carne se corta en porciones y
-                      se sirve en la mesa para que los comensales disfruten
-                      compartiendo.
-                    </li>
-                  </ol>
-                </section>
-
-                <img
-                  src="./images/asado/asado1.jpg"
-                  alt="Asado"
-                  width="389"
-                  height="259"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/asado/asado2.jpg"
-                  alt="Asado"
-                  width="389"
-                  height="259"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/asado/asado3.jpg"
-                  alt="Asado"
-                  width="782"
-                  height="437"
-                  loading="lazy"
-                />
-              </article>
+              <p>
+                <strong>Historia:</strong> El asado argentino es un pilar
+                cultural que se remonta a la época de los gauchos (vaqueros) en
+                las pampas argentinas. Los gauchos solían cocinar carne en
+                grandes parrillas al aire libre. Con el tiempo, el asado se
+                convirtió en una tradición arraigada en la cultura argentina,
+                donde las reuniones alrededor del fuego y la carne asada son
+                momentos de camaradería y celebración.
+              </p>
             </section>
-          </main>
-          <footer>
-            <!-- Contenido del pie de página -->
-            <p>
-              &copy; 2023 Comida Típica Argentina. Todos los derechos
-              reservados.
-            </p>
-            <p>
-              Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co
-            </p>
-          </footer>
-        </td>
-      </tr>
-    </table>
+            <section>
+              <p>
+                <strong>Importancia:</strong> El asado es más que una comida; es
+                un ritual social y culinario que refleja la pasión argentina por
+                la carne. La elección y preparación de los cortes, así como las
+                técnicas de cocción en la parrilla, son temas de conversación y
+                debate en todo el país.
+              </p>
+            </section>
+            <section>
+              <p>
+                <strong>Ingredientes:</strong> Los ingredientes principales son
+                los cortes de carne de res de alta calidad. Los cortes populares
+                incluyen el bife de chorizo, el asado de tira, la entraña y la
+                morcilla. A menudo se sazonan con sal gruesa antes de cocinar.
+              </p>
+            </section>
+
+            <div class="container-video-extern">
+              <iframe
+                class="container-video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/o5Gm1ZmSfvE?si=rK-k45yk9pXgffMK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+
+            <section>
+              <p><strong>Preparación:</strong></p>
+              <ol>
+                <li>
+                  Elección de la carne: Se seleccionan cortes de carne de res
+                  fresca y de alta calidad.
+                </li>
+                <li>
+                  Sazonado: Se sazona la carne con sal gruesa y, a veces, con
+                  condimentos adicionales como chimichurri.
+                </li>
+                <li>
+                  Cocción en la parrilla: La carne se coloca en la parrilla
+                  caliente y se cocina lentamente a la perfección, volteándola
+                  ocasionalmente.
+                </li>
+                <li>
+                  Servicio: Una vez cocida, la carne se corta en porciones y se
+                  sirve en la mesa para que los comensales disfruten
+                  compartiendo.
+                </li>
+              </ol>
+            </section>
+          </article>
+          <div class="gallery-galeria">
+            <img src="./images/asado/asado1.jpg" alt="Asado" loading="lazy" />
+            <img src="./images/asado/asado2.jpg" alt="Asado" loading="lazy" />
+            <img src="./images/asado/asado3.jpg" alt="Asado" loading="lazy" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Contenido del pie de página -->
+      <p>&copy; 2023 Comida Típica Argentina. Todos los derechos reservados.</p>
+      <p>Desarrollado por Daniel Muñoz. Contacto: danielf.munoz@udea.edu.co</p>
+    </footer>
   </body>
 </html>

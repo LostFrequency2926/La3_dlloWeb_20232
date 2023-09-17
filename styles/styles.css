@@ -747,31 +747,11 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
 .container-cards-ingrediente {
   display: flex;
-  flex-direction: column; /* Cambia la dirección de flexbox para dispositivos móviles */
-  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
-  max-width: 100%; /* Ancho máximo del contenedor */
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.container-cards-ingrediente .cards-list {
-  width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
-  max-width: 100%;
-}
-
-.container-cards-ingrediente .card {
-  width: 100%;
-}
-
-.container-cards-ingrediente .container {
-  text-align: center; /* Centra el texto horizontalmente */
-}
-
-/* Estilos adicionales según sea necesario para dispositivos móviles */
-@media (max-width: 768px) {
-  .container-cards-ingrediente {
-    padding: 20px; /* Agrega un espacio interno */
-  }
 }
 
 /* ___________________________________________________________________________________________ */
